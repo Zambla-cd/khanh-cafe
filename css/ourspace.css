@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f1e8;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4b3025;
+  overflow-x: hidden;
+}
+
+.gioithieu-khonggian {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: center;
+  padding: 85px 9%;
+  background-color: #f2e8da;
+}
+
+.noidung-gioithieu {
+  max-width: 480px;
+  padding-right: 35px;
+}
+
+.dong-chu-nho {
+  margin-bottom: 18px;
+  color: #9b6b48;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.noidung-gioithieu h1 {
+  margin-bottom: 25px;
+  color: #4b3025;
+  font-size: 48px;
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: -1.5px;
+}
+
+.noidung-gioithieu > p:not(.dong-chu-nho) {
+  max-width: 440px;
+  margin-bottom: 25px;
+  color: #80634d;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.anh-gioithieu img {
+  display: block;
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+}
+
+.nut-xemmenu {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 25px;
+  background-color: #4b3025;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nut-xemmenu:hover {
+  background-color: #80634d;
+}
+
+.bosuutap-khonggian {
+  padding: 90px 9%;
+  background-color: #fffdf9;
+}
+
+.tieude-khonggian {
+  max-width: 650px;
+  margin-bottom: 50px;
+}
+
+.tieude-khonggian h2 {
+  margin-bottom: 18px;
+  color: #4b3025;
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.tieude-khonggian > p:not(.dong-chu-nho) {
+  color: #80634d;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.danhsach-khonggian {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.the-khonggian {
+  width: 33.33%;
+}
+
+.the-khonggian img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.thongtin-khonggian {
+  padding: 20px 0;
+}
+
+.thongtin-khonggian h3 {
+  margin-bottom: 12px;
+  color: #4b3025;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.thongtin-khonggian p {
+  color: #80634d;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.loimoi {
+  padding: 75px 9%;
+  text-align: center;
+  background-color: #f8f3ed;
+}
+
+.loimoi h2 {
+  margin-bottom: 18px;
+  color: #4b3025;
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.loimoi > p:not(.dong-chu-nho) {
+  max-width: 600px;
+  margin: 0 auto 25px;
+  color: #80634d;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+@media (max-width: 900px) {
+  .gioithieu-khonggian {
+    padding: 65px 6%;
+  }
+
+  .noidung-gioithieu {
+    padding-right: 20px;
+  }
+
+  .noidung-gioithieu h1 {
+    font-size: 40px;
+  }
+
+  .anh-gioithieu img {
+    height: 420px;
+  }
+
+  .bosuutap-khonggian {
+    padding: 65px 6%;
+  }
+
+  .danhsach-khonggian {
+    gap: 18px;
+  }
+
+  .the-khonggian img {
+    height: 210px;
+  }
+
+  .loimoi {
+    padding: 60px 6%;
+  }
+}
+
+@media (max-width: 760px) {
+  .gioithieu-khonggian {
+    grid-template-columns: 1fr;
+    padding: 55px 7%;
+  }
+
+  .noidung-gioithieu {
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 35px;
+  }
+
+  .noidung-gioithieu h1 {
+    font-size: 36px;
+  }
+
+  .anh-gioithieu img {
+    height: 330px;
+  }
+
+  .bosuutap-khonggian {
+    padding: 55px 7%;
+  }
+
+  .tieude-khonggian h2 {
+    font-size: 30px;
+  }
+
+  .danhsach-khonggian {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .the-khonggian {
+    width: 100%;
+  }
+
+  .the-khonggian img {
+    height: 250px;
+  }
+
+  .thongtin-khonggian {
+    padding: 15px 0 25px;
+  }
+
+  .loimoi {
+    padding: 55px 7%;
+  }
+
+  .loimoi h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .gioithieu-khonggian {
+    padding: 40px 6%;
+  }
+
+  .noidung-gioithieu h1 {
+    font-size: 30px;
+  }
+
+  .dong-chu-nho {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .anh-gioithieu img {
+    height: 250px;
+  }
+
+  .bosuutap-khonggian {
+    padding: 40px 6%;
+  }
+
+  .tieude-khonggian h2,
+  .loimoi h2 {
+    font-size: 26px;
+  }
+
+  .the-khonggian img {
+    height: 210px;
+  }
+
+  .loimoi {
+    padding: 40px 6%;
+  }
+}

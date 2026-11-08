@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Khánh Cafe</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="./css/sylehome.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+
+  <body>
+    <!-- ==================== HEADER ==================== -->
+    <nav class="navbar-container">
+      <div class="left-container">
+        <div class="button">
+          <a href="index.html" class="logo">KHÁNH CAFE</a>
+        </div>
+
+        <div class="button">
+          <a href="index.html" aria-current="page">TRANG CHỦ</a>
+        </div>
+
+        <div class="button">
+          <a href="menu.html">THỰC ĐƠN</a>
+        </div>
+
+        <div class="button">
+          <a href="ourspace.html">KHÔNG GIAN</a>
+        </div>
+
+        <div class="button">
+          <a href="aboutus.html">VỀ CHÚNG TÔI</a>
+        </div>
+      </div>
+
+      <div class="right-container">
+        <div class="dropdown" id="account-dropdown">
+          <a href="#" class="dropdown-title" id="account-name">TÀI KHOẢN ▾</a>
+
+          <div class="dropdown-menu">
+            <a href="login.html">Đăng nhập</a>
+            <a href="register.html">Đăng ký</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ================== END HEADER ================== -->
+
+    <!-- ===================== BODY ===================== -->
+    <div class="coffee-slideshow w3-display-container">
+      <div class="slide-text">
+        <p class="small-title">WELCOME TO KHÁNH CAFE</p>
+        <h1>ĐÁNH THỨC<br />ĐAM MÊ CÀ PHÊ</h1>
+
+        <p class="description">
+          Thưởng thức hương vị cà phê, tận hưởng từng khoảnh khắc.
+        </p>
+
+        <a href="menu.html" class="banner-button">KHÁM PHÁ THỰC ĐƠN →</a>
+      </div>
+
+      <img class="slides" src="./img/coffee1.jpg" alt="Không gian quán" />
+      <img class="slides" src="./img/coffee2.jpg" alt="Những ly cà phê" />
+      <img class="slides" src="./img/coffee3.jpg" alt="Cà phê Khánh Cafe" />
+
+      <div
+        class="w3-center w3-display-bottommiddle nut-slide"
+        style="width: 100%"
+      >
+        <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+
+        <span class="w3-badge demo" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+
+    <section class="sanpham-section">
+      <div class="tieudethongtinsanpham">
+        <p>Menu</p>
+        <h2>SẢN PHẨM NỔI BẬT</h2>
+        <p>Thưởng thức hương vị cà phê đặc biệt tại Khánh Cafe.</p>
+      </div>
+
+      <div class="container-product">
+        <div class="thesanpham">
+          <img src="./img/caphesuada.jpg" alt="Cà phê sữa đá" />
+          <div class="thongtinsanpham">
+            <h3>Cà phê sữa đá</h3>
+            <p>Cà phê ngọt vừa</p>
+            <p class="giatien">29.000đ</p>
+          </div>
+        </div>
+
+        <div class="thesanpham">
+          <img src="./img/caphebacxiu.jpg" alt="Bạc xỉu" />
+          <div class="thongtinsanpham">
+            <h3>Bạc xỉu</h3>
+            <p>Cà phê siêu ngọt</p>
+            <p class="giatien">32.000đ</p>
+          </div>
+        </div>
+
+        <div class="thesanpham">
+          <img src="./img/matchadaxay.jpg" alt="Matcha đá xay" />
+          <div class="thongtinsanpham">
+            <h3>Matcha đá xay</h3>
+            <p>Matcha được xay chung với đá</p>
+            <p class="giatien">45.000đ</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="nutxemsanpham">
+        <a href="menu.html">XEM TOÀN BỘ THỰC ĐƠN →</a>
+      </div>
+    </section>
+
+    <section class="khonggian khonggian-thu1">
+      <div class="noidung-khonggian">
+        <h2>KHÔNG GIAN YÊN TĨNH</h2>
+        <p>
+          <i>
+            Khám phá không gian yên tĩnh và tận hưởng ly cà phê thơm ngon tại
+            Khánh Cafe.
+          </i>
+        </p>
+        <a href="ourspace.html">XEM KHÔNG GIAN →</a>
+      </div>
+
+      <div class="hinhanh-khonggian">
+        <img src="./img/khonggiancafe1.jpg" alt="Không gian Khánh Cafe" />
+      </div>
+    </section>
+
+    <section class="khonggian khonggian-thu2">
+      <div class="hinhanh-khonggian">
+        <img src="./img/aboutus.jpg" alt="Nhân viên Khánh Cafe" />
+      </div>
+
+      <div class="noidung-khonggian">
+        <h2>VỀ CHÚNG TÔI</h2>
+        <p>
+          <i>Khánh Cafe Company là thương hiệu cà phê chuyên nghiệp.</i>
+        </p>
+        <a href="aboutus.html">XEM THÊM →</a>
+      </div>
+    </section>
+
+    <a href="chat.html" class="chat-bubble" aria-label="Mở khung chat">
+      <span>✉</span>
+    </a>
+    <!-- =================== END BODY =================== -->
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <h2>KHÁNH CAFE</h2>
+          <p>
+            Nơi hương vị cà phê hòa quyện cùng những khoảnh khắc tuyệt nhất.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>LIÊN KẾT</h3>
+          <a href="index.html">Trang chủ</a>
+          <a href="menu.html">Thực đơn</a>
+          <a href="ourspace.html">Không gian</a>
+          <a href="aboutus.html">Về chúng tôi</a>
+        </div>
+
+        <div class="footer-contact">
+          <h3>LIÊN HỆ</h3>
+          <p>Địa chỉ: Q7, TP. Hồ Chí Minh</p>
+          <p>Điện thoại: 038 662 5741</p>
+          <p>Email: huykhanhledinh45@khanhcafe.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Khánh Cafe. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- ================== END FOOTER ================== -->
+    <script>
+      let slideIndex = 1;
+      let slides = document.getElementsByClassName("slides");
+      let dots = document.getElementsByClassName("demo");
+
+      function showDivs(n) {
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          dots[i].classList.remove("w3-white");
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add("w3-white");
+      }
+
+      function plusDivs(n) {
+        slideIndex += n;
+        showDivs(slideIndex);
+      }
+
+      function currentDiv(n) {
+        slideIndex = n;
+        showDivs(slideIndex);
+      }
+
+      showDivs(slideIndex);
+
+      setInterval(function () {
+        plusDivs(1);
+      }, 3000);
+
+      let savedName = sessionStorage.getItem("userName");
+
+      if (savedName) {
+        document.getElementById("account-name").textContent =
+          savedName.toUpperCase();
+        document.getElementById("account-dropdown").classList.add("logged-in");
+      }
+    </script>
+  </body>
+</html>

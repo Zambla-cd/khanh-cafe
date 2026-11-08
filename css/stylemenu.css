@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f7f1e8;
+  font-family: Arial, sans-serif;
+  color: #4b3023;
+  overflow-x: hidden;
+}
+
+.menu-banner-text {
+  width: 100%;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.menu-banner-text h1 {
+  color: #5b3925;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.menu-banner-text p {
+  color: #79563d;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.danhsachsanphan {
+  padding: 30px 20px 55px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.danhsachsanphan .thesanpham {
+  width: 230px;
+  margin: 15px;
+  background-color: #fffdf9;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(75, 48, 35, 0.1);
+  transition: transform 0.3s;
+}
+
+.danhsachsanphan .thesanpham:hover {
+  transform: translateY(-5px);
+}
+
+.danhsachsanphan .thesanpham img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.tensanpham {
+  padding: 15px 12px;
+}
+
+.tensanpham p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 8px 0 12px;
+}
+
+.tensanpham span {
+  display: inline-block;
+  background-color: #ead6bf;
+  color: #70472e;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #3b261e;
+  color: #f8f3ed;
+  padding: 50px 8% 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 35px;
+}
+
+.footer-info {
+  width: 40%;
+}
+
+.footer-info h2 {
+  font-size: 25px;
+  color: #e6bc83;
+  margin-bottom: 15px;
+}
+
+.footer-info p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #e0d4c9;
+}
+
+.footer-links,
+.footer-contact {
+  width: 25%;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  font-size: 17px;
+  color: #e6bc83;
+  margin-bottom: 18px;
+}
+
+.footer-links a {
+  display: block;
+  color: #e0d4c9;
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  color: #e0d4c9;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.footer-bottom {
+  border-top: 1px solid #6d5142;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  color: #cbb9aa;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .danhsachsanphan {
+    padding: 25px 10px 45px;
+  }
+
+  .danhsachsanphan .thesanpham {
+    width: 220px;
+    margin: 12px;
+  }
+
+  .footer {
+    padding: 40px 5% 0;
+  }
+
+  .footer-info {
+    width: 38%;
+  }
+
+  .footer-links,
+  .footer-contact {
+    width: 28%;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-banner {
+    min-height: 200px;
+    padding: 25px 15px;
+  }
+
+  .menu-banner-text {
+    padding: 25px 15px;
+  }
+
+  .menu-banner-text h1 {
+    font-size: 32px;
+  }
+
+  .menu-banner-text p {
+    font-size: 15px;
+  }
+
+  .danhsachsanphan {
+    padding: 20px 15px 35px;
+  }
+
+  .danhsachsanphan .thesanpham {
+    width: 100%;
+    max-width: 320px;
+    margin: 12px auto;
+  }
+
+  .danhsachsanphan .thesanpham img {
+    height: 220px;
+  }
+
+  .footer {
+    padding: 35px 7% 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+
+  .footer-info,
+  .footer-links,
+  .footer-contact {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .menu-banner-text h1 {
+    font-size: 28px;
+  }
+
+  .menu-banner-text p {
+    font-size: 14px;
+  }
+
+  .tensanpham p {
+    font-size: 16px;
+  }
+}

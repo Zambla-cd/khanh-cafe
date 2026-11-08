@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #e9d8c5;
+  font-family: Arial, sans-serif;
+  color: #4b3025;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.auth-page {
+  width: 850px;
+  max-width: 100%;
+  min-height: 530px;
+  background-color: #fffdf9;
+  border-radius: 18px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(75, 48, 37, 0.12);
+}
+
+.auth-image {
+  width: 48%;
+  overflow: hidden;
+}
+
+.auth-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.auth-content {
+  width: 52%;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.auth-content h1 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.title-line {
+  width: 70%;
+  height: 1px;
+  background-color: #cbb39c;
+  margin: 0 auto 28px;
+}
+
+.auth-content h2 {
+  font-size: 27px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 14px;
+  color: #80634d;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.auth-content form {
+  width: 100%;
+}
+
+.auth-content input {
+  width: 100%;
+  height: 48px;
+  padding: 0 18px;
+  margin-bottom: 15px;
+  border: 1px solid #d8c5b2;
+  border-radius: 7px;
+  background-color: #f7f1e8;
+  font-size: 14px;
+  outline: none;
+}
+
+.auth-content input:focus {
+  border-color: #80634d;
+}
+
+.auth-content input::placeholder {
+  color: #a99a8d;
+}
+
+.auth-content button {
+  width: 100%;
+  height: 48px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 7px;
+  background-color: #4b3025;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auth-content button:hover {
+  background-color: #80634d;
+}
+
+.switch-page {
+  font-size: 14px;
+  margin-top: 22px;
+  line-height: 1.6;
+}
+
+.switch-page a {
+  color: #633a27;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.switch-page a:hover {
+  text-decoration: underline;
+}
+
+.back-home {
+  display: inline-block;
+  margin-top: 25px;
+  color: #80634d;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.back-home:hover {
+  color: #4b3025;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .auth-page {
+    width: 95%;
+    min-height: 480px;
+  }
+
+  .auth-content {
+    padding: 30px;
+  }
+
+  .auth-content h1 {
+    font-size: 29px;
+  }
+
+  .auth-content h2 {
+    font-size: 24px;
+  }
+}
+
+/* Điện thoại */
+@media (max-width: 650px) {
+  body {
+    align-items: flex-start;
+    padding: 20px 10px;
+  }
+
+  .auth-page {
+    width: 100%;
+    min-height: auto;
+    flex-direction: column;
+    border-radius: 12px;
+  }
+
+  .auth-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .auth-content {
+    width: 100%;
+    padding: 30px 25px;
+  }
+
+  .auth-content h1 {
+    font-size: 27px;
+  }
+
+  .auth-content h2 {
+    font-size: 23px;
+  }
+
+  .description {
+    margin-bottom: 22px;
+  }
+
+  .back-home {
+    margin-top: 20px;
+  }
+}
+
+/* Điện thoại nhỏ */
+@media (max-width: 380px) {
+  body {
+    padding: 12px 8px;
+  }
+
+  .auth-image {
+    height: 160px;
+  }
+
+  .auth-content {
+    padding: 25px 18px;
+  }
+
+  .auth-content h1 {
+    font-size: 24px;
+  }
+
+  .auth-content h2 {
+    font-size: 21px;
+  }
+
+  .title-line {
+    margin-bottom: 22px;
+  }
+
+  .auth-content input {
+    padding: 0 12px;
+  }
+}

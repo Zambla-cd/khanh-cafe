@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #4b3025;
+}
+
+img {
+  max-width: 100%;
+}
+
+.coffee-slideshow {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  background-color: #4b3025;
+}
+
+.slides {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: none;
+}
+
+.coffee-slideshow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.small-title {
+  color: #e6bc83;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+.slide-text h1 {
+  font-size: 46px;
+  line-height: 1.3;
+  margin: 20px 0;
+}
+
+.description {
+  font-size: 16px;
+}
+
+.banner-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 25px;
+  background-color: #9b6b48;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.banner-button:hover {
+  background-color: #6d4632;
+}
+
+.nut-slide {
+  z-index: 3;
+  color: white;
+}
+
+.nut-slide .w3-left,
+.nut-slide .w3-right {
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.w3-badge {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin: 0 5px;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.w3-badge.w3-white {
+  background-color: #e6bc83;
+  opacity: 1;
+}
+
+.sanpham-section {
+  width: 100%;
+  padding: 60px 8%;
+  background-color: white;
+  text-align: center;
+}
+
+.tieudethongtinsanpham {
+  width: 100%;
+}
+
+.tieudethongtinsanpham p {
+  color: #80634d;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.tieudethongtinsanpham h2 {
+  color: #4b3025;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.container-product {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.container-product .thesanpham {
+  width: 30%;
+  margin: 0 1.5%;
+  background-color: #f8f1e7;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.container-product .thesanpham img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  display: block;
+}
+
+.container-product .thongtinsanpham {
+  padding: 20px;
+  background-color: white;
+}
+
+.container-product .thongtinsanpham h3 {
+  color: #4b3025;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.container-product .thongtinsanpham p {
+  color: #76665b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.container-product .thongtinsanpham .giatien {
+  color: #9b6b3d;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nutxemsanpham {
+  margin-top: 35px;
+}
+
+.nutxemsanpham a {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #4b3025;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.nutxemsanpham a:hover {
+  background-color: #80634d;
+}
+
+.khonggian {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 9%;
+  background-color: #f8f3ed;
+}
+
+.noidung-khonggian {
+  width: 48%;
+}
+
+.noidung-khonggian h2 {
+  font-size: 25px;
+  color: #4b3025;
+  margin-bottom: 20px;
+}
+
+.noidung-khonggian p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #4b3025;
+}
+
+.noidung-khonggian a {
+  display: inline-block;
+  color: #4b3025;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.noidung-khonggian a:hover {
+  color: #9b6b48;
+}
+
+.hinhanh-khonggian {
+  width: 40%;
+}
+
+.hinhanh-khonggian img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border: 6px solid white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  transform: rotate(1deg);
+}
+
+.khonggian-thu2 {
+  background-color: white;
+}
+
+.khonggian-thu2 .hinhanh-khonggian {
+  order: 1;
+}
+
+.khonggian-thu2 .noidung-khonggian {
+  order: 2;
+}
+
+.chat-bubble {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4b3025;
+  color: white;
+  border-radius: 50%;
+  font-size: 28px;
+  text-decoration: none;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.chat-bubble:hover {
+  background-color: #80634d;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .sanpham-section {
+    padding: 50px 5%;
+  }
+
+  .container-product .thesanpham {
+    width: 46%;
+    margin: 2%;
+  }
+
+  .khonggian {
+    padding: 60px 6%;
+  }
+
+  .noidung-khonggian p {
+    font-size: 16px;
+  }
+
+  .hinhanh-khonggian img {
+    height: 280px;
+  }
+
+  .footer {
+    padding: 40px 6% 0;
+  }
+
+  .footer-info {
+    width: 38%;
+  }
+
+  .footer-links,
+  .footer-contact {
+    width: 28%;
+  }
+}
+
+@media (max-width: 600px) {
+  .coffee-slideshow,
+  .slides {
+    height: 350px;
+  }
+
+  .slide-text h1 {
+    font-size: 32px;
+  }
+
+  .small-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .banner-button {
+    padding: 12px 18px;
+  }
+
+  .sanpham-section {
+    padding: 40px 6%;
+  }
+
+  .tieudethongtinsanpham h2 {
+    font-size: 25px;
+  }
+
+  .tieudethongtinsanpham p {
+    font-size: 16px;
+  }
+
+  .container-product .thesanpham {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .container-product .thesanpham img {
+    height: 230px;
+  }
+
+  .khonggian {
+    flex-direction: column;
+    padding: 45px 8%;
+  }
+
+  .noidung-khonggian {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .noidung-khonggian h2 {
+    font-size: 22px;
+  }
+
+  .noidung-khonggian p {
+    font-size: 16px;
+  }
+
+  .hinhanh-khonggian {
+    width: 100%;
+  }
+
+  .hinhanh-khonggian img {
+    height: 260px;
+  }
+
+  .khonggian-thu2 .hinhanh-khonggian {
+    order: 2;
+  }
+
+  .khonggian-thu2 .noidung-khonggian {
+    order: 1;
+  }
+
+  .chat-bubble {
+    width: 50px;
+    height: 50px;
+    right: 18px;
+    bottom: 18px;
+    font-size: 24px;
+  }
+
+  .footer {
+    padding: 35px 7% 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+
+  .footer-info,
+  .footer-links,
+  .footer-contact {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .footer-bottom p {
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 400px) {
+  .slide-text h1 {
+    font-size: 27px;
+  }
+
+  .small-title {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .chat-bubble {
+    right: 12px;
+    bottom: 12px;
+  }
+}

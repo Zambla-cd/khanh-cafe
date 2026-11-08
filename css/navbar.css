@@ -1,0 +1,182 @@
+.navbar-container {
+  width: 100%;
+  min-height: 80px;
+  padding: 0 50px;
+  background-color: #4b3025;
+  display: flex;
+  align-items: center;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 10px 18px;
+}
+
+.button a,
+.dropdown-title {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.button a:hover,
+.dropdown-title:hover {
+  color: #e6bc83;
+}
+
+.navbar-container .logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 45px;
+  white-space: nowrap;
+}
+
+.right-container {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-title {
+  display: block;
+  padding: 10px 18px;
+  white-space: nowrap;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 160px;
+  background-color: #fffdf9;
+  border: 1px solid #e5d8c9;
+  z-index: 100;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 13px 18px;
+  color: #4b3025;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f2e8da;
+  color: #80634d;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown.logged-in .dropdown-menu {
+  display: none !important;
+}
+
+.dropdown.logged-in .dropdown-title {
+  cursor: default;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .navbar-container {
+    padding: 0 25px;
+  }
+
+  .navbar-container .logo {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+
+  .button {
+    padding: 10px 12px;
+  }
+
+  .button a,
+  .dropdown-title {
+    font-size: 16px;
+  }
+
+  .dropdown-title {
+    padding: 10px 12px;
+  }
+}
+
+/* Điện thoại */
+@media (max-width: 650px) {
+  .navbar-container {
+    min-height: 80px;
+    height: auto;
+    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .left-container {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar-container .logo {
+    width: 100%;
+    margin: 0 0 10px;
+    text-align: center;
+    font-size: 21px;
+  }
+
+  .button {
+    padding: 8px 10px;
+  }
+
+  .button a,
+  .dropdown-title {
+    font-size: 14px;
+  }
+
+  .right-container {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .dropdown-title {
+    padding: 8px 10px;
+  }
+}
+
+/* Điện thoại nhỏ */
+@media (max-width: 380px) {
+  .navbar-container {
+    padding: 12px 8px;
+  }
+
+  .navbar-container .logo {
+    font-size: 19px;
+  }
+
+  .button {
+    padding: 7px 7px;
+  }
+
+  .button a,
+  .dropdown-title {
+    font-size: 12px;
+  }
+
+  .dropdown-title {
+    padding: 7px;
+  }
+}

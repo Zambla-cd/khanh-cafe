@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Về chúng tôi - Khánh Cafe</title>
+
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/aboutus.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+
+  <body>
+    <!-- ==================== HEADER ==================== -->
+    <nav class="navbar-container">
+      <div class="left-container">
+        <div class="button">
+          <a href="index.html" class="logo">KHÁNH CAFE</a>
+        </div>
+
+        <div class="button">
+          <a href="index.html" aria-current="page">TRANG CHỦ</a>
+        </div>
+
+        <div class="button">
+          <a href="menu.html">THỰC ĐƠN</a>
+        </div>
+
+        <div class="button">
+          <a href="ourspace.html">KHÔNG GIAN</a>
+        </div>
+
+        <div class="button">
+          <a href="aboutus.html">VỀ CHÚNG TÔI</a>
+        </div>
+      </div>
+
+      <div class="right-container">
+        <div class="dropdown" id="account-dropdown">
+          <a href="#" class="dropdown-title" id="account-name">TÀI KHOẢN ▾</a>
+
+          <div class="dropdown-menu">
+            <a href="login.html">Đăng nhập</a>
+            <a href="register.html">Đăng ký</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ================== END HEADER ================== -->
+
+    <!-- ===================== BODY ===================== -->
+    <main class="about-page">
+      <section class="about-intro">
+        <div class="about-copy">
+          <h1>Mỗi tách cà phê đều bắt đầu từ sự tận tâm</h1>
+
+          <p>
+            Khánh Cafe là nơi chúng tôi muốn chia sẻ những tách cà phê thơm
+            ngon, không gian dễ chịu và những khoảnh khắc bình yên giữa nhịp
+            sống bận rộn.
+          </p>
+
+          <a href="menu.html">Khám phá thực đơn →</a>
+        </div>
+
+        <img src="./img/aboutus.jpg" alt="Đội ngũ Khánh Cafe" />
+      </section>
+
+      <section class="about-values">
+        <h2>Điều chúng tôi trân trọng</h2>
+
+        <div class="value-grid">
+          <article>
+            <h3>Chất lượng</h3>
+            <p>Chọn lựa nguyên liệu kỹ lưỡng để mỗi ly đồ uống luôn tròn vị.</p>
+          </article>
+
+          <article>
+            <h3>Sự hiếu khách</h3>
+            <p>Đón tiếp mỗi vị khách bằng sự thân thiện và chu đáo.</p>
+          </article>
+
+          <article>
+            <h3>Khoảnh khắc</h3>
+            <p>
+              Tạo nên một không gian ấm áp để gặp gỡ, làm việc và nghỉ ngơi.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <!-- =================== END BODY =================== -->
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <h2>KHÁNH CAFE</h2>
+          <p>
+            Nơi hương vị cà phê hòa quyện cùng những khoảnh khắc tuyệt nhất.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>LIÊN KẾT</h3>
+          <a href="index.html">Trang chủ</a>
+          <a href="menu.html">Thực đơn</a>
+          <a href="ourspace.html">Không gian</a>
+          <a href="aboutus.html">Về chúng tôi</a>
+        </div>
+
+        <div class="footer-contact">
+          <h3>LIÊN HỆ</h3>
+          <p>Địa chỉ: Q7, TP. Hồ Chí Minh</p>
+          <p>Điện thoại: 038 662 5741</p>
+          <p>Email: huykhanhledinh45@khanhcafe.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Khánh Cafe. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- ================== END FOOTER ================== -->
+    <script>
+      let savedName = sessionStorage.getItem("userName");
+
+      if (savedName) {
+        document.getElementById("account-name").textContent =
+          savedName.toUpperCase();
+        document.getElementById("account-dropdown").classList.add("logged-in");
+      }
+    </script>
+  </body>
+</html>

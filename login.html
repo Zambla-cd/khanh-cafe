@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập - Khánh Cafe</title>
+    <link rel="stylesheet" href="./css/auth.css" />
+  </head>
+  <body>
+    <div class="auth-page">
+      <div class="auth-image">
+        <img src="./img/coffee1.jpg" alt="Khánh Cafe" />
+      </div>
+
+      <div class="auth-content">
+        <h1>KHÁNH CAFE</h1>
+        <div class="title-line"></div>
+
+        <h2>Chào mừng trở lại!</h2>
+        <p class="description">Đăng nhập để tiếp tục khám phá Khánh Cafe.</p>
+
+        <form
+          action="index.html"
+          onsubmit="
+            sessionStorage.setItem(
+              'userName',
+              document.getElementById('username').value,
+            )
+          "
+        >
+          <input
+            type="text"
+            id="username"
+            placeholder="Tên đăng nhập"
+            required
+          />
+
+          <input type="password" placeholder="Mật khẩu" required />
+
+          <button type="submit">ĐĂNG NHẬP</button>
+        </form>
+
+        <p class="switch-page">
+          Chưa có tài khoản?
+          <a href="register.html">Đăng ký ngay</a>
+        </p>
+
+        <a href="index.html" class="back-home"> ← Quay về trang chủ </a>
+      </div>
+    </div>
+  </body>
+</html>

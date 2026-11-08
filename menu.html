@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Menu - Khánh Cafe</title>
+
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/stylemenu.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+
+  <body>
+    <!-- ==================== HEADER ==================== -->
+    <nav class="navbar-container">
+      <div class="left-container">
+        <div class="button">
+          <a href="index.html" class="logo">KHÁNH CAFE</a>
+        </div>
+
+        <div class="button">
+          <a href="index.html">TRANG CHỦ</a>
+        </div>
+
+        <div class="button">
+          <a href="menu.html">THỰC ĐƠN</a>
+        </div>
+
+        <div class="button">
+          <a href="ourspace.html">KHÔNG GIAN</a>
+        </div>
+
+        <div class="button">
+          <a href="aboutus.html">VỀ CHÚNG TÔI</a>
+        </div>
+      </div>
+      <!-- ================== END HEADER ================== -->
+
+      <!-- ===================== BODY ===================== -->
+      <div class="right-container">
+        <div class="dropdown" id="account-dropdown">
+          <a href="#" class="dropdown-title" id="account-name">TÀI KHOẢN ▾</a>
+
+          <div class="dropdown-menu">
+            <a href="login.html">Đăng nhập</a>
+            <a href="register.html">Đăng ký</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="menu-banner">
+      <div class="menu-banner-text">
+        <h1>THỰC ĐƠN</h1>
+        <p>Khám phá những hương vị cà phê tuyệt vời</p>
+      </div>
+    </section>
+
+    <main class="danhsachsanphan">
+      <div class="thesanpham">
+        <img src="./img/matchadaxay.jpg" alt="Matcha đá xay" />
+        <div class="tensanpham">
+          <p>Matcha đá xay</p>
+          <span>Best Seller</span>
+        </div>
+      </div>
+
+      <div class="thesanpham">
+        <img src="./img/capheden.jpg" alt="Cà phê đen" />
+        <div class="tensanpham">
+          <p>Cà phê đen</p>
+          <span>Best Seller</span>
+        </div>
+      </div>
+
+      <div class="thesanpham">
+        <img src="./img/caphebacxiu.jpg" alt="Bạc xỉu" />
+        <div class="tensanpham">
+          <p>Bạc xỉu</p>
+          <span>Best Seller</span>
+        </div>
+      </div>
+
+      <div class="thesanpham">
+        <img src="./img/caphesuada.jpg" alt="Cà phê sữa đá" />
+        <div class="tensanpham">
+          <p>Cà phê sữa đá</p>
+          <span>Best Seller</span>
+        </div>
+      </div>
+
+      <div class="thesanpham">
+        <img src="./img/cappuccino.jpg" alt="Cappuccino" />
+        <div class="tensanpham">
+          <p>Cappuccino nóng</p>
+        </div>
+      </div>
+
+      <div class="thesanpham">
+        <img src="./img/tratacmatong.jpg" alt="Trà tắc mật ong" />
+        <div class="tensanpham">
+          <p>Trà tắc mật ong</p>
+        </div>
+      </div>
+
+      <div class="thesanpham">
+        <img src="./img/trasua.jpg" alt="Trà sữa" />
+        <div class="tensanpham">
+          <p>Trà sữa</p>
+        </div>
+      </div>
+
+      <div class="thesanpham">
+        <img src="./img/espresso.jpg" alt="Espresso" />
+        <div class="tensanpham">
+          <p>Espresso</p>
+        </div>
+      </div>
+
+      <div class="thesanpham">
+        <img src="./img/tradao.jpg" alt="Trà đào" />
+        <div class="tensanpham">
+          <p>Trà đào</p>
+        </div>
+      </div>
+
+      <div class="thesanpham">
+        <img src="./img/socola.jpg" alt="Socola đá xay" />
+        <div class="tensanpham">
+          <p>Socola đá xay</p>
+        </div>
+      </div>
+    </main>
+    <!-- =================== END BODY =================== -->
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <h2>KHÁNH CAFE</h2>
+          <p>
+            Nơi hương vị cà phê hòa quyện cùng những khoảnh khắc tuyệt nhất.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>LIÊN KẾT</h3>
+          <a href="index.html">Trang chủ</a>
+          <a href="menu.html">Thực đơn</a>
+          <a href="ourspace.html">Không gian</a>
+          <a href="aboutus.html">Về chúng tôi</a>
+        </div>
+
+        <div class="footer-contact">
+          <h3>LIÊN HỆ</h3>
+          <p>Địa chỉ: Q7, TP. Hồ Chí Minh</p>
+          <p>Điện thoại: 038 662 5741</p>
+          <p>Email: huykhanhledinh45@khanhcafe.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Khánh Cafe. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- ================== END FOOTER ================== -->
+    <script>
+      let savedName = sessionStorage.getItem("userName");
+
+      if (savedName) {
+        document.getElementById("account-name").textContent =
+          savedName.toUpperCase();
+        document.getElementById("account-dropdown").classList.add("logged-in");
+      }
+    </script>
+  </body>
+</html>
